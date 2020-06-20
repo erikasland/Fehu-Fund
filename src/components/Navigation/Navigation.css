@@ -1,0 +1,51 @@
+/* @media (min-width: 640px) {
+
+}
+
+@media (min-width: 768px) {
+
+}
+
+@media (min-width: 1024px) {
+
+}
+
+@media (min-width: 1280px) {
+
+} */
+
+nav {
+    border-bottom: 1px #b5b5b5 solid;
+    background-color: #121212;
+    color: white;
+    position: absolute;
+    height: 4.5rem;
+    width: 100%;
+    z-index: 2;
+}
+
+.title-container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.title-container h3 {
+    font-size: 2rem;
+    height: 2rem;
+    user-select: none;
+}
+
+h3 {
+    font-size: 1.5rem;
+    height: 17px;
+    font-family: 'WorkSans' !important;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    width: 35rem;
+}

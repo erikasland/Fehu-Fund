@@ -1,26 +1,18 @@
 import React from "react";
+import './Navigation.css'; 
+import MenuIcon from '../MenuIcon/MenuIcon';
 
-const Navigation = () => (
-    <nav>
-        <div>
-          <h3>Home</h3>
-        </div>
-        <div>
-          <h3>About</h3>
-        </div>
-        <div>
-          <h3>Team</h3>
-        </div>
-        <div>
-          <h3>Resources</h3>
-        </div>
-        <div>
-          <h3>Assets</h3>
-        </div>
-        <div>
-          <h3>Contact</h3>
-        </div>
-      </nav>
-)
+class Navigation extends React.Component {
+    render () {
+      return (
+        <nav>
+            <MenuIcon updateSideNavBarOpen={this.props.updateSideNavBarOpen} sideNavBarOpen={this.props.sideNavBarOpen} currentPageTitle={this.props.currentPageTitle}/>
+            <div className="title-container">
+              <h3>FEHU FUND</h3>
+            </div>
+        </nav>
+      )
+    }
+}
 
 export default Navigation;

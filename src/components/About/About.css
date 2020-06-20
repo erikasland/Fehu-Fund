@@ -1,0 +1,16 @@
+.about-wrapper{
+    height: 100%;
+    width: 100%;
+    background-color: red;
+    transition: opacity 1s ease-out;
+    animation: fadein 1s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+.close {
+    opacity: 0 ;
+}
